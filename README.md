@@ -45,7 +45,7 @@ Find savings or investment accounts with no inflow in the past year.
 I computed the most recent transaction date per user and joined this with their plans. For each plan, I flagged it as inactive if no inflow had occurred in the last 365 days.
 
 **Why this approach?**  
-Rather than joining raw transaction data directly with plans — which could result in excessive row duplication — I pre-aggregated the last transaction per user first. This significantly improved performance and reduced memory overhead.
+Rather than joining raw transaction data directly with plans, which could result in excessive row duplication, I pre-aggregated the last transaction per user first. This significantly improved performance and reduced memory overhead.
 
 **Challenges:**  
 The initial query timed out due to a many-to-many join explosion. I resolved this by aggregating transactions before joining with plans and using a `LEFT JOIN` to catch plans with no activity.
