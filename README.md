@@ -71,10 +71,10 @@ An alternative version included all users, assigning `0` to inactive accounts. W
 ---
 
 ## Folder Contents
-├── Assessment_Q1.sql
-├── Assessment_Q2.sql
-├── Assessment_Q3.sql
-├── Assessment_Q4.sql
+├── Assessment_Q1.sql   
+├── Assessment_Q2.sql   
+├── Assessment_Q3.sql   
+├── Assessment_Q4.sql   
 └── README.md
 
 ---
